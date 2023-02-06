@@ -15,6 +15,8 @@ public class Wade : Kinematic
     {
         myMoveType = new Wander();
         myMoveType.character = this;
+        myMoveType.target = myTarget;
+        myMoveType.flee = flee;
 
         mySeekRotateType = new Face();
         mySeekRotateType.character = this;
